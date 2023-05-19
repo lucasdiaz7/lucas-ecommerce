@@ -1,0 +1,24 @@
+.carrito{
+    border-color: white;
+    color: white;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.num{
+    margin-right: 15px;
+    text-decoration: none;
+   
+}
+
+.cont{
+    position: absolute;
+    text-decoration: none;
+    margin-right: 12px;
+    top: 21px;
+    font-size: 15px;
+    right: 18px;
+    color: black;
+}
