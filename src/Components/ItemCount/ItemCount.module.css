@@ -11,27 +11,28 @@
     justify-content: flex-start;
 }
 .btn{
+    border-color: #dd137b;
+    border-radius: 50% !important;
     cursor: pointer;
     font-size: 17px;
     margin: 4px;
 }
 
 .btn:hover{
-    background: #292828e8;
-    color: white;
+    background: #efefef;
+    color: black;
 }
 
 .btnCarrito{
     margin-bottom: 20px;
     cursor: pointer;
-    width: 120px;
-    height: 30px;
-    background: #e2e2e2;
+    background: #dd137b ;
+    color: #fff;
     border-radius: 10px;
 }
 .btnCarrito:hover{
     transform: translateY(2px);
-    background: #292828e8;
+    /* background: #292828e8; */
     /* background: #b3a8ab; */
-    color: white;
+    /* color: white; */
 }

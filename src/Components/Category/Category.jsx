@@ -11,14 +11,14 @@ const Category = ({ categories }) => {
     return (
         <div className={style.divGral} >
             {categories.map((c) => {
-                return <Link to={c.path} key={c.id}>
-                    {c.name === "notebooks" ? <AiOutlineLaptop /> : null}
-                    {c.name === "celulares" ? <GiSmartphone /> : null}
-                    {c.name === "tablets" ? <BsTabletLandscape /> : null}
-                    {c.name === "aires" ? <MdOutlineAcUnit /> : null}
-                    {c.name === "rodados" ? <MdOutlineDirectionsBike /> : null}
-                    {c.name === "televisores" ? <BiTv /> : null}
-                    {c.name === "lavarropas" ? <MdOutlineLocalLaundryService /> : null}
+                return <Link className={style.linkCategory} to={c.path} key={c.id}>
+                    {c.name === "notebooks" ? <AiOutlineLaptop className={style.iconCategory} /> : null}
+                    {c.name === "celulares" ? <GiSmartphone className={style.iconCategory} /> : null}
+                    {c.name === "tablets" ? <BsTabletLandscape className={style.iconCategory} /> : null}
+                    {c.name === "aires" ? <MdOutlineAcUnit className={style.iconCategory} /> : null}
+                    {c.name === "rodados" ? <MdOutlineDirectionsBike className={style.iconCategory} /> : null}
+                    {c.name === "televisores" ? <BiTv className={style.iconCategory} /> : null}
+                    {c.name === "lavarropas" ? <MdOutlineLocalLaundryService className={style.iconCategory} /> : null}
                     {c.name}
                 </Link>;
             })}

@@ -1,5 +1,7 @@
 .rowCard{
-    border: 0.5px solid rgba(0, 0, 0, 0.425);
+    /* border: 0.5px solid #dd137b75 ; */
+    background-color:#0000001f;
+    border-radius: 20px;
     margin: 10px;
     padding: 10px;
     width: 20%;
@@ -9,12 +11,28 @@
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
+    margin-bottom: 80px
 }
 .imgCard{
     width: 100%;
 }
 
+.btn{
+  background: #dd137b !important;
+  border: none !important;
+}
+
+@media (max-width: 950px) {
+    .rowCard {
+      width: 40%;
+    }
+  }
 @media (max-width: 700px) {
+    .rowCard {
+      width: 45%;
+    }
+  }
+@media (max-width: 500px) {
     .rowCard {
       width: 99%;
     }

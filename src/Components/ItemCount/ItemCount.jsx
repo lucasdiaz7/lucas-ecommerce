@@ -24,7 +24,6 @@ const ItemCount = ({ stock, initial = 1, onAdd }) => {
     return (
         <div className={style.CountGral} >
             <div className={style.count} >
-                <span>Cantidad: </span>
                 <button className={style.btn} onClick={restar}><MdRemove /></button>
                 <span className={style.span} >{contador}</span>
                 <button className={style.btn} onClick={sumar}><MdAdd /></button>

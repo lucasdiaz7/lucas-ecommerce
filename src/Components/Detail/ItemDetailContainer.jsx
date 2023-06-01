@@ -19,7 +19,7 @@ const ItemDetailContainer = () => {
     const { id } = useParams();
     const { agregarAlCarrito, getQuantity } = useContext(CartContext);
     const [productDetail, setProductDetail] = useState([]);
-    let [color, setColor] = useState("#292828e8");
+    let [color, setColor] = useState("#dd137bs");
 
     useEffect(() => {
         const itemCollection = collection(db, "products");

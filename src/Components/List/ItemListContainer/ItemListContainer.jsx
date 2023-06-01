@@ -19,7 +19,7 @@ const override = {
 const ItemListContainer = () => {
     const { id } = useParams();
     const [items, setItems] = useState([]);
-    let [color, setColor] = useState("#292828e8");
+    let [color, setColor] = useState("#dd137b");
 
     useEffect(() => {
         // const itemCollection = collection(db, "products");
@@ -30,7 +30,6 @@ const ItemListContainer = () => {
             getDocs(q)
                 .then((res) => {
                     let products = res.docs.map((product) => {
-                        console.log('res.docs :>> ', res.docs);
                         return {
                             ...product.data(),
                             id: product.id

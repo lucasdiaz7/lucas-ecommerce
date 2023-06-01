@@ -19,7 +19,7 @@ const ItemList = ({ items }) => {
                         {`$${e.price}`}
                     </Card.Text>
                     <Link to={`/item/${e.id}`}>
-                        <Button variant="primary">Ver detalle</Button>
+                        <Button className={style.btn}>Ver detalle</Button>
                     </Link>
                 </Row>
             )}

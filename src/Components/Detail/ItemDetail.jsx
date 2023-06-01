@@ -6,25 +6,27 @@ import style from "./ItemDetail.module.css"
 
 const ItemDetail = ({ listQuantity, productDetail, onAdd }) => {
     return (
-        <Container style={{ width: "90%" }} fluid>
+        <Container className={style.detailCont} fluid>
             <Row className={style.row} >
-                <div className={style.h5}>
+                <Col xs={12} md={6} className={style.h5}>
                     <h5>{productDetail.name}</h5>
-                </div>
-                <div>
+                </Col>
+                <Col xs={12} md={6}>
                     <img className={style.imgDetail} src={productDetail.img} />
-                </div>
+                </Col>
             </Row>
-            <Row className={style.row2} >
-                <Card.Text className={style.text} >
+            <Row >
+                <Card.Text >
                     {productDetail.description}
                 </Card.Text>
             </Row>
             <Row className={style.row3} >
-                <ItemCount stock={productDetail.stock} onAdd={onAdd} initial={listQuantity} />
-                <Card.Text className={style.price} >
+                <Col xs={12} md={6}>
+                    <ItemCount stock={productDetail.stock} onAdd={onAdd} initial={listQuantity} />
+                </Col>
+                <Col className={style.price} xs={12} md={6}>
                     Precio:  $ {productDetail.price}
-                </Card.Text>
+                </Col>
             </Row>
 
 
